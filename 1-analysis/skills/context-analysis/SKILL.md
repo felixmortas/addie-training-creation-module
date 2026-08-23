@@ -1,0 +1,3 @@
+The context analysis, which examines the kind of conditions where the learners will use their new skills.
+
+What kind of conditions will these learners be trained in? Are we going to teach them in computer labs? What are those computer labs like? What kind of technology is there? Are we doing this training online? If so, do they have a learning management system (LMS)? If so, what kind? This is where we answer the how? and where? What are the environments like? What technology is available? What's the budget like for that technology?

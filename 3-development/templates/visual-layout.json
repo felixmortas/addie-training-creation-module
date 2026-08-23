@@ -1,0 +1,73 @@
+{
+  "presentation": {
+    "title": "La transformation digitale de l'entreprise",
+    "language": "fr",
+    "theme": "corporate",
+    "aspect_ratio": "16:9"
+  },
+
+  "slides": [
+    {
+      "id": "s1",
+      "type": "title",
+      "title": "La transformation digitale",
+      "subtitle": "Enjeux, stratégie et feuille de route"
+    },
+
+    {
+      "id": "s2",
+      "type": "message",
+      "title": "Pourquoi transformer maintenant ?",
+      "message": "Les attentes clients évoluent plus vite que les processus internes.",
+      "visual": {
+        "type": "stat",
+        "value": "3×",
+        "label": "accélération attendue"
+      }
+    },
+
+    {
+      "id": "s3",
+      "type": "comparison",
+      "title": "Avant / Après",
+      "columns": [
+        {
+          "title": "Aujourd'hui",
+          "items": [
+            "Processus manuels",
+            "Données dispersées",
+            "Décisions lentes"
+          ]
+        },
+        {
+          "title": "Demain",
+          "items": [
+            "Processus automatisés",
+            "Données centralisées",
+            "Décisions temps réel"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "s4",
+      "type": "roadmap",
+      "title": "Une transformation en trois étapes",
+      "steps": [
+        {
+          "title": "Cadrer",
+          "duration": "T1"
+        },
+        {
+          "title": "Déployer",
+          "duration": "T2–T3"
+        },
+        {
+          "title": "Industrialiser",
+          "duration": "T4"
+        }
+      ]
+    }
+  ]
+}
