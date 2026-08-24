@@ -1,3 +1,13 @@
+For this workflow, the input files that you need to use are :
+  - _bmad-output/addie/{project-name}/goals.md
+  - _bmad-output/addie/{project-name}/training-proposal.md
+  - _bmad-output/addie/{project-name}/task-analysis.md
+  - _bmad-output/addie/{project-name}/analysis-document.md
+
+Load and read them before doing what is asked to you.
+
+---
+
 For each task, build the learning objectives of the training
 
 Every objective has four parts:
