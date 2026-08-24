@@ -28,4 +28,4 @@ Read only the current stage. Complete it before loading the next stage. A stage 
 
 ## First stage
 
-Read fully and follow `[[bmad-snapshot:step-01-traning-charter.md]]`.
+Read fully and follow `[[bmad-snapshot:step-01-training-charter.md]]`.
