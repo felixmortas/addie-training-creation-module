@@ -1,0 +1,94 @@
+8.0 Evaluation
+The following section will discuss evaluation as it relates to
+Instructional Design. There are a number of reasons why an
+instructional designer needs to know how to do an evaluation
+(*note we are not talking about assessments for objectives in
+this section). Those can include something as simple as a quality
+check to something difficult like trying to determine if a project’s
+return on investment was met. We could be evaluating a course
+or a program’s success. We can evaluate lots of different things.
+The two types of evaluation that IDs focus on are formative and
+summative. Formative evaluation is a small, simple evaluation,
+like a review or pilot test.
+In the instructional design process, we use these to assess our
+quality, for example, I might have a subject matter expert review
+my design. These types of formative evaluations are consistently
+happening during many parts of the ID process. If you paid
+attention in my other sections within this text I point out when
+and what is a quality check!
+Next, we have summative evaluations. Summative is the final
+evaluation. For example, determining the ROI, determining if
+students learned, etc.
+The difference between formative and summative is fairly easy
+to understand. Formative is rather simple (i.e., quality check)
+and summative is more final (high-stakes).
+When conducting a summative evaluation we first need to
+determine why we are going to do it. What is the purpose of the
+evaluation? From this purpose, we develop key questions which
+103
+help to guide the rest of the evaluation. These key questions are
+the ‘what’ we seek to gain/learn/get from this evaluation. There
+can be one question or many depending on what we want to
+find out! Once we have our key questions we can select an
+evaluation model. The model we choose should be the model
+that best helps us answer our questions.
+Most often this is Kirkpatrick’s model. When I say it’s used most
+often, it’s used over 99% of the time (yes I made up that 99%
+statistic but I have rarely seen an alternative being used).
+Kirkpatrick’s model is a buzzword within the field. If you're going
+to learn one evaluation model in our field, this is the one you're
+going to learn because it's hands down the most popular. It does
+a good job of addressing the impact of training courses,
+programs, and products so it's really good for use in our field for
+a number of reasons.
+Having said that, let’s talk about Kirkpatrick's model. There are
+four levels to Kirkpatrick's model (Kirkpatrick, 1994):
+Table 14.0
+| Kirkpatrick’s model |
+|---|
+| Level 1 – Learner satisfaction |
+| Level 2 – Learning |
+| Level 3 – Transfer to job |
+| Level 4 – Return on investment |
+Level 1 is learner satisfaction. Did the learners enjoy the
+training? Did they like it? What did they dislike? Our goal here is
+to determine if the learners were happy with the training and
+what they believe could be improved. While learner satisfaction
+isn’t always important (i.e. certain types of strenuous training)
+the data it provides can help inform the instructors, clients,
+developers, etc. what can be improved in the future.
+Level 2 is learning. Did learning occur and if so, by how much?
+Thus in order to perform that measurement, it’s beneficial to
+offer a pre- and post-test so that you can compare the results.
+Keep in mind that learner satisfaction is not necessarily
+correlated with learning. So you can have satisfied learners that
+didn’t learn anything and vice versa. This is why you must
+measure learning to be sure. Additionally, this helps determine
+training effectiveness and can be used to help support levels 3
+and 4.
+Levels 3 and 4 are more difficult to capture and as a result not
+performed as often in most organizations.
+Level 3 is transfer of behavior. Are the learners doing what they
+learned on the job? To collect this data you may need to observe
+behavior, analyze performance data, interview employees,
+and/or distribute surveys. This can be done at any future point
+after the training, 1 month, 6 months, or a year - it’s going to be
+up to the client. I cannot recommend a timeframe because the
+project goals and client needs should indicate when this could
+happen.
+Level 4 looks at the impacts. What was the return on
+investment? Before we start the training project, we always
+figure out what we believe the return on investment of this
+project is going to be; some kind of performance metric that we
+can objectively measure. Then we try to assess if this occurred.
+This would depend on the project goals, for example, less errors
+in assembly, money savings, more productivity, etc. It’s going to
+depend on the project.
+If we were writing an evaluation report out for a client it would
+be organized similar to the following:
+1. Background/Client
+2. Stakeholders
+3. Key Questions
+4. Model selected
+5. Data collection and Findings
+6. Recommendations based on findings

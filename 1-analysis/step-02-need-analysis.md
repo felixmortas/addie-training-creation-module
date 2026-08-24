@@ -1,20 +1,11 @@
+# Diagnose the need
 
+Use the charter and the user's selected evidence to write three separate files in `{analysis_output_folder}`:
 
-# Step 2: Plan
+- `learner-analysis.md`, using `assets/learner-analysis-template.md`; load `skills/learner-analysis/SKILL.md` before drafting.
+- `context-analysis.md`, using `assets/context-analysis-template.md`; load `skills/context-analysis/SKILL.md` before drafting.
+- `gap-analysis.md`, using `assets/gap-analysis-template.md`; load `skills/gap-analysis/SKILL.md` before drafting.
 
-## RULES
+Each finding must state its source or be labelled an assumption. Diagnose performance causes before proposing training. Identify non-training interventions (process, tools, incentives, staffing, access, or policy) when they are a better or necessary part of the solution. Learning preferences may inform delivery familiarity; never claim a learning-style diagnosis.
 
-- **Language** — Speak in `{{.communication_language}}`. Write any file output in `{{.document_output_language}}`.
-- No intermediate approvals.
-
-## INSTRUCTIONS
-
-The needs analysis is a combination of the learner analysis, context analysis, and gap analysis.
-Read fully and follow :
-→ `[[bmad-snapshot:skills/context-analysis/SKILL.md]]`
-→ `[[bmad-snapshot:skills/gap-analysis/SKILL.md]]`
-→ `[[bmad-snapshot:skills/learner-analysis/SKILL.md]]`
-
-## NEXT
-
-Read fully and follow `[[bmad-snapshot:step-03-goals.md]]`
+When the three analyses give a defensible current state, desired state, constraints, and recommendation, read fully and follow `[[bmad-snapshot:step-03-goals.md]]`.

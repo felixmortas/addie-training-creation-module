@@ -1,29 +1,11 @@
-## Step 4 : Write a training proposal
+# Propose the intervention
 
-Based on all the documents created in the analysis phase, write a proposal and get it approuved by the client.
+Create `{analysis_output_folder}/training-proposal.md` from `assets/training-proposal-template.md`, integrating the charter, three analyses, and goals. Recommend an intervention only to the degree supported by the evidence. Give viable options when constraints make the desired state unrealistic, including their scope, trade-offs, timeline, cost/effort, dependencies, and expected business impact. Keep estimates explicitly provisional when evidence is incomplete.
 
-Proposal template : href=template/traning-proposal.md
+Present a concise summary and halt for one of these choices:
 
-### CHECKPOINT 1
+- **Approve and continue** — set the proposal status to `approved` and read `[[bmad-snapshot:step-05-task-analysis.md]]`.
+- **Approve and stop** — set the proposal status to `approved` and stop; a later run resumes with task analysis.
+- **Revise proposal** — incorporate the user's direction, then present the approval choice again.
 
-Present summary. Display the proposal file path as a CWD-relative path (no leading `/`) so it is clickable in the terminal. If token count exceeded 1600 and the user chose to keep the full proposal, include the token count and explain why it may be a problem.
-
-After presenting the summary, display this note:
-
----
-
-Before approving, you can open the proposal file in an editor or ask me questions and tell me what to change. You can also use `bmad-advanced-elicitation` or `bmad-party-mode`, ideally in another session to avoid context bloat.
-
----
-
-HALT and give the user a choice:
-
-- **Approve and continue** — approve the proposal and proceed to next steps.
-- **Approve and stop** — approve the proposal, leave it `approved`, and stop so a fresh `bmad-addie-analyse` session can resume at next step.
-- **Review proposal** — review the proposal, use a subagent if available, and discuss the findings and revisions with the user until the user is ready to approve, then either stop or continue.
-
-Before acting on approval, re-read `{proposal_file}` from disk. If it is missing, HALT without recreating it, changing status, or proceeding. If it changed, acknowledge the external edits and continue with the updated version. Set status `approved`; everything inside `<frozen-after-approval>` is then locked and only the human can change it.
-
-## NEXT
-
-Read fully and follow `[[bmad-snapshot:step-05-task-analysis.md]]`
+Before recording approval, re-read the file from disk. If it was externally edited, acknowledge and use the current version. If it is absent, stop without recreating or approving it.

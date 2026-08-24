@@ -1,0 +1,60 @@
+7.0 Implementation
+The following section will describe the implementation phase in
+Instructional Design. If you recall from previous sections, the
+ADDIE process isn’t linear, so implementation takes place
+throughout the entire process. Additionally, there may be
+different parts of the project that can be implemented at various
+times depending on your deliverables and client needs.
+The basic premise of implementation is that I've delivered my
+product to the client and it’s being rolled out to their users. I've
+developed it and handed it off. It is done (hopefully for your
+sake). Many times this is where my job as an ID stops. I hand off
+the project and that’s it. However, sometimes I am responsible
+for implementation.
+Regardless, one of the first things I do during implementation is
+to create a lessons-learned document. This describes what I
+have learned during the project thus far. It also includes any
+special notes about the client or project. This is very useful if I
+need to come back to the project or client in the future.
+Assuming that I am responsible for more than just handing this
+off to the client, then there are many other practices I have to
+do to ensure my implementation goes smoothly. This could
+involve installing the software on an LMS, setting up the LMS,
+doing a train the trainer session, etc.
+Many times, if they have an LMS, I may have to install the
+software for them on the LMS. For example, I may have to add a
+link in the LMS or even set up a course shell for them to teach
+the course. If I'm lucky they will have an LMS administrator and I
+don't have to do that. But you need to know how to do that so
+that you can have that as an option, This can make life much
+easier for both you and your client.
+Another necessity may be to train-the-trainer (TTT). Train-the-
+trainer sessions can mean many things. Am I training a trainer to
+train all of the trainers? Am I training many trainers to deliver
+courses? Am I training trainers to be subject matter experts?
+There are times when you might even be the trainer, training
+the end-user.
+Next, we need to consider change management and
+communication. If there is a significant change, I may need to
+help ensure that it’s being managed correctly. For example, this
+might involve implementing a change model, such as ADKAR
+(change models are beyond the scope of this text). This is why
+an ID needs to ensure they understand the change process so
+that they can identify when it’s needed and can walk the client
+through it.
+Communication is usually part of the change process and
+implementation. Are stakeholders aware of the training and its
+impacts? Who is responsible for ensuring they have that
+information? I have worked with clients who have a
+communication team and others where I was expected to do it
+myself.
+A final note here, as you are doing implementation, you need to
+be thinking ahead - to evaluation. Are you collecting the
+appropriate data for evaluation? This is described in the next
+section but be aware that you need to know what type of
+evaluation the client might want to do so that you can collect
+that data during implementation.
+Remember, a poor implementation can make the greatest
+training seem terrible. You have to make sure that
+implementation is done well and it's smooth, successful, and
+error-free.
