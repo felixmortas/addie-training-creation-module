@@ -29,7 +29,7 @@ Five independent, progressive-loading workflow skills—one for each ADDIE phase
 - `/addie-implement`
 - `/addie-evaluate`
 
-Each workflow uses the BMad v6 loading pattern: `SKILL.md` routes to `workflow.md`, which loads one ordered `step-XX-*.md` file at a time. Phase-specific templates and other reusable resources are loaded only when relevant.
+Each workflow, when relevent, uses the BMad v6 loading pattern: `SKILL.md` routes to `workflow.md`, which loads one ordered `step-XX-*.md` file at a time. Phase-specific templates and other reusable resources are loaded only when relevant.
 
 This architecture preserves the user's desired explicit phase commands, allows every phase to be invoked independently, and keeps the module maintainable. An orchestrator is deliberately excluded: designers remain responsible for selecting the applicable phase and authoritative upstream files.
 
