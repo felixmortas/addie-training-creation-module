@@ -1,11 +1,7 @@
-# Organizational and delivery strategy catalogue
+# Delivery strategy catalogue
 
-Select strategies only from this list. A hybrid is permitted only when named and derived from two or more entries below.
-
-| Strategy | Learning domain | Knowledge level | Phase |
+| Delivery Strategy | Bloom domain | Knowledge level | Organizational Strategy |
 | --- | --- | --- | --- |
-| Gagné's 9 Events | Cognitive, Affective, Psychomotor | Low–High | Organizational |
-| Dick & Carey's flow | Cognitive, Affective, Psychomotor | Low–High | Organizational |
 | Keller's ARCS Model | Affective | Low | Introduction |
 | Storytelling / narrative framing | Affective | Low | Introduction |
 | Analogy / metaphor opener | Cognitive | Low | Introduction |
@@ -49,8 +45,7 @@ Select strategies only from this list. A hybrid is permitted only when named and
 | Rubric-based assessment | Cognitive | Low–High | Assessment |
 | Retrieval practice | Cognitive | Low | Assessment |
 | Job aids | Cognitive | Low | Utilization |
-| Apprenticeship | Cognitive, Psychomotor | High | Utilization |
-| Mentorship | Cognitive, Affective | High | Utilization |
+| Apprenticeship mentorship | Cognitive, Affective | High | Utilization |
 | Coaching | Cognitive, Affective, Psychomotor | High | Utilization |
 | Sandbox / simulation | Cognitive, Psychomotor | High | Utilization |
 | Drills | Psychomotor | Low | Utilization |

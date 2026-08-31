@@ -1,4 +1,4 @@
-# Assessment question-type catalogue
+# Assessment question catalogue
 
 Select an assessment question type only from this list. A hybrid is permitted only when named and derived from two or more entries below.
 

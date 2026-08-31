@@ -1,28 +1,76 @@
-# ADDIE design workflow
+# Instructional Design Table Workflow
 
-**Outcome:** Produce `organizational-and-delivery-strategies.md`, a design handoff that a developer can turn into learning products without this conversation. It must make every task, measurable objective, knowledge level, post-assessment, organizational approach, and delivery strategy traceable to selected analysis evidence.
+**Goal:** Turn a task analysis into a complete, congruent instructional design
+table validated row by row and ready to hand off to Development.
 
-## Operating contract
+**CRITICAL:** If a step directs you to another snapshot file, read it fully and follow it. No exceptions.
 
-- Speak in `{communication_language}` and write the artifact in `{document_output_language}`.
-- Ask the designer to explicitly select an approved `analysis-document.md` and its output folder. Accept explicitly selected task analysis, goals, learner/context findings, or constraints when needed; never discover or choose upstream files automatically.
-- Default the course folder to `{project-root}/_bmad-output/addie/<course-slug>` and write the final artifact to `<course-folder>/design/organizational-and-delivery-strategies.md`. Keep the selected paths as run state.
-- If an existing final artifact is supplied, inventory it and resume at its first incomplete or unapproved section. Never overwrite an approved artifact; surface conflicts for the designer to resolve.
-- Treat stated facts as evidence only when supported by the selected files. Label inferences and unresolved gaps. In unattended runs, stop with a concise missing-input report instead of inventing evidence or decisions.
-- Preserve alignment: one observable objective and an aligned post-assessment for every in-scope task. Do not design a separate pre-assessment: it is the same assessment with different values.
-- Assessment question types and strategies must come from the loaded catalogues. A hybrid is allowed only when it is explicitly named and clearly combines catalogue entries.
-- Ask for approval of the completed handoff. Once approved, preserve it unless the designer explicitly reopens it.
+Subagents, when the capability is available, are an important part of this workflow. Use them as directed by the workflow steps.
+If you need an explicit user instruction to run them, ask once now for the whole workflow run.
 
-## Progressive loading
+## DESIGN TABLE ROW READY STANDARD
+ 
+A design table row is "Ready for Development" when:
+ 
+- **Congruent**: Objective, Assessment, and both strategies all address the exact same task, knowledge level and Bloom domain — no drift between columns.
+- **Classified**: Every row carries an explicit domain (cognitive / affective / psychomotor) and knowledge level, used as the basis for the strategy choice.
+- **Measurable**: The objective uses ABCD form, is valide and reliable.
+- **Assessed**: The assessment item directly tests the stated objective — not a related-but-different skill or a lower/higher Bloom level.
+- **Strategized**: Both an organizational-strategy placement (where the task sits in the course structure) and a delivery-strategy (a concrete technique) are assigned, each with a one-line justification.
+- **Complete**: No placeholders, no "TBD", no empty cells.
 
-Read only the current stage. Complete it before loading the next stage.
+## Conventions
 
-| Stage | Purpose | Load when |
-| --- | --- | --- |
-| Define objectives | Convert selected tasks into measurable objectives and knowledge levels. | Selected analysis evidence identifies in-scope tasks. |
-| Design assessment | Specify valid post-assessments aligned to every objective. | Every in-scope task has a draft objective and knowledge level. |
-| Select strategies and finalize | Choose organizational and delivery strategies, produce the handoff, and obtain approval. | Every objective has an aligned assessment. |
+- Every operational cross-file reference in this workflow is an absolute snapshot path. Open it directly; do not resolve it relative to a skill directory.
+- `{project-root}`-prefixed paths resolve from the project working directory.
+- Whenever this workflow captures or records a version-control revision, obtain the full canonical identifier directly from version control and preserve it verbatim.
 
-## First stage
+## On Activation
 
-Read fully and follow `[[bmad-snapshot:step-01-learning-objectives.md]]`.
+### Step 1: Execute Prepend Steps
+
+Execute each of these steps in order before proceeding (`_None._` means skip):
+
+{workflow.activation_steps_prepend}
+
+### Step 2: Load Persistent Facts
+
+Treat every entry below as foundational context you carry for the rest of the workflow run. Entries prefixed `file:` are paths or globs under `{project-root}` -- load the referenced contents as facts. All other entries are facts verbatim (`_None._` means none):
+
+{workflow.persistent_facts}
+
+### Step 3: Execute Append Steps
+
+Execute each of these steps in order (`_None._` means skip):
+
+{workflow.activation_steps_append}
+
+## WORKFLOW ARCHITECTURE
+
+This uses **step-file architecture** for disciplined execution:
+
+- **Micro-file Design**: Each step is self-contained and followed exactly
+- **Just-In-Time Loading**: Only load the current step file
+- **Sequential Enforcement**: Complete steps in order, no skipping
+- **State Tracking**: Persist progress via spec frontmatter and in-memory variables
+- **Append-Only Building**: Build artifacts incrementally
+
+### Step Processing Rules
+
+1. **READ COMPLETELY**: Read the entire step file before acting
+2. **FOLLOW SEQUENCE**: Execute sections in order
+3. **VALIDATE BEFORE ADVANCING**: Check each newly filled column or line against the DESIGN TABLE READY STANDARD before moving to the next one
+4. **WAIT FOR INPUT**: Halt at checkpoints and wait for human review when a validation fails or a business-rule conflict is detected
+5. **LOAD NEXT**: When directed, read fully and follow the next step file
+
+### Critical Rules (NO EXCEPTIONS)
+
+- **NEVER** load multiple step files simultaneously
+- **ALWAYS** read entire step file before execution
+- **NEVER** skip steps or optimize the sequence
+- **ALWAYS** follow the exact instructions in the step file
+- **ALWAYS** halt at checkpoints and wait for human input
+
+## FIRST STEP
+
+Read fully and follow: `[[design-snapshot:step-01-learning-objectives.md]]` to begin the workflow.
