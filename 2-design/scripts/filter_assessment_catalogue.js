@@ -67,12 +67,11 @@ function parseTable(raw) {
 
   const header = splitRow(lines[0]);
   const typeCol = header.findIndex((cell) => /^type$/i.test(cell));
-  const lowCol = header.findIndex((cell) => /low-level/i.test(cell));
-  const highCol = header.findIndex((cell) => /high-level/i.test(cell));
+  const knowledgeCol = header.findIndex((cell) => /knowledge-level/i.test(cell));
 
-  if (typeCol === -1 || lowCol === -1 || highCol === -1) {
+  if (typeCol === -1 || knowledgeCol === -1) {
     fail(
-      'catalogue table is missing one of the required columns: "Type", "Best for low-level", "Best for high-level"',
+      'catalogue table is missing one of the required columns: "Type", "Best for knowledge-level"',
     );
   }
 
@@ -80,11 +79,12 @@ function parseTable(raw) {
   for (let i = 1; i < lines.length; i += 1) {
     const cells = splitRow(lines[i]);
     if (isSeparatorRow(cells)) continue;
-    if (cells.length <= Math.max(typeCol, lowCol, highCol)) continue; // malformed row, skip defensively
+    if (cells.length <= Math.max(typeCol, knowledgeCol)) continue; // malformed row, skip defensively
+    const knowledgeVal = cells[knowledgeCol];
     rows.push({
       type: cells[typeCol],
-      low: /^yes$/i.test(cells[lowCol]),
-      high: /^yes$/i.test(cells[highCol]),
+      low: /low/i.test(knowledgeVal),
+      high: /high/i.test(knowledgeVal),
     });
   }
 

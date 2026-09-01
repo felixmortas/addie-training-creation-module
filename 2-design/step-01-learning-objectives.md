@@ -1,5 +1,5 @@
 ---
-state_file: '' # set at runtime to {{.implementation_artifacts}}/learning-objectives.json
+state_file: '' # set at runtime to {{.implementation_artifacts}}/design/learning-objectives.json
 task_count: '' # set at runtime from scripts/count_task.js output
 current_task_index: '' # set at runtime; 1-based index of the next task to write, resumed from state_file if it already exists
 max_retries: 3 # fixed retry budget per task before halting and asking the human
@@ -10,7 +10,7 @@ max_retries: 3 # fixed retry budget per task before halting and asking the human
 ## RULES
 
 - **Language** — Speak in `{{.communication_language}}`. Write any file output in `{{.document_output_language}}`.
-- Every learning objective must be grounded only in `{{.implementation_artifacts}}/analysis-artifacts/task-analysis.json` content. Never fabricate task content that isn't there.
+- Every learning objective must be grounded only in `{{.implementation_artifacts}}/analysis/task-analysis.md` content. Never fabricate task content that isn't there.
 - The subagent that writes objectives has no file system access. All context it needs must be included directly in its prompt. Do not ask it to read files itself.
 - Only the primary agent performs file I/O (running scripts, reading `references/*.md` and `assets/templates/*.json` once, writing `{state_file}`). Subagents never write to disk.
 - Never skip a task, merge two tasks into one objective, or reorder tasks. Process task ids strictly in ascending order, one subagent call per task.
@@ -24,14 +24,14 @@ max_retries: 3 # fixed retry budget per task before halting and asking the human
 Run:
 
 ```bash
-node "{skill-root}/scripts/count_task.js" "{{.implementation_artifacts}}/analysis-artifacts/task-analysis.json"
+node "{skill-root}/scripts/count_task.js" "{{.implementation_artifacts}}/analysis/task-analysis.md"
 ```
 
 Capture stdout as `{task_count}`. If the command fails, or stdout is not a positive integer, HALT per RULES.
 
 ### 2. Resolve resume position
 
-- Set `{state_file}` = `{{.implementation_artifacts}}/learning-objectives.json`.
+- Set `{state_file}` = `{{.implementation_artifacts}}/design/learning-objectives.json`.
 - If `{state_file}` exists and parses as valid JSON with a non-empty `tasks` array: set `{current_task_index}` = (highest `task_id` present) + 1. Treat every existing entry as already validated — do not re-validate or regenerate it.
 - Otherwise: initialize `{state_file}` with the full contents of `{skill-root}/assets/templates/learning-objectives-state.json`, and set `{current_task_index}` = 1.
 
@@ -42,7 +42,7 @@ If `{current_task_index}` > `{task_count}`, every task already has a validated o
 a. **Extract task context.** Run:
 
 ```bash
-node "{skill-root}/scripts/decompose_task.js" "{{.implementation_artifacts}}/analysis-artifacts/task-analysis.json" "{n}"
+node "{skill-root}/scripts/decompose_task.js" "{{.implementation_artifacts}}/analysis/task-analysis.md" "{n}"
 ```
 
 Capture the JSON stdout as `{task_context}` (contains `scope_and_assumptions`, `task_priorities`, and `task` — id, title, body). On failure, HALT per RULES.

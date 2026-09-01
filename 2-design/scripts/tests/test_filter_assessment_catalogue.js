@@ -12,21 +12,21 @@ const path = require('path');
 
 const SCRIPT = path.join(__dirname, '..', 'scripts', 'filter_assessment_catalogue.js');
 
-// Fixture that mirrors the real assessment-types-catalogue.md structure
-// (same columns, a representative subset of rows).
+// Fixture that mirrors the new assessment-types-catalogue.md structure
+// (single "Best for knowledge-level" column with Low, High, or Low-High values).
 const FIXTURE_CATALOGUE = `# Assessment question catalogue
 
 Select an assessment question type only from this list. A hybrid is permitted only when named and derived from two or more entries below.
 
-| Type | Best for low-level | Best for high-level |
-| --- | --- | --- |
-| True/False | Yes | — |
-| Multiple Choice (single answer) | Yes | Yes |
-| Multiple Response / Multiple Select | Yes | Yes |
-| Matching | Yes | — |
-| Long Answer / Essay | — | Yes |
-| Case Study Analysis | — | Yes |
-| Branching Scenario / Decision Tree | — | Yes |
+| Type | Best for knowledge-level |
+| --- | --- |
+| True/False | Low |
+| Multiple Choice (single answer) | Low-High |
+| Multiple Response / Multiple Select | Low-High |
+| Matching | Low |
+| Long Answer / Essay | High |
+| Case Study Analysis | High |
+| Branching Scenario / Decision Tree | High |
 `;
 
 let tmpDir;

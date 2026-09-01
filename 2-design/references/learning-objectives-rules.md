@@ -1,7 +1,7 @@
 # Knowledge level definition 
 
-- **Low-level** = factual information such as recall, which can be remembered but cannot be used in new situations
-- **High-level** = problem-solving/transfer knowledge that is applied, used, and can be organized into an integrated representation
+- **Low** = factual information such as recall, which can be remembered but cannot be used in new situations
+- **High** = problem-solving/transfer knowledge that is applied, used, and can be organized into an integrated representation
 
 # Bloom's domains of learning
 

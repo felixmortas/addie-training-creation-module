@@ -2,25 +2,25 @@
 
 Select an assessment question type only from this list. A hybrid is permitted only when named and derived from two or more entries below.
 
-| Type | Best for low-level | Best for high-level |
-| --- | --- | --- |
-| True/False | Yes | — |
-| Multiple Choice (single answer) | Yes | Yes |
-| Multiple Response / Multiple Select | Yes | Yes |
-| Matching | Yes | — |
-| Ranking / Ordering | Yes | Yes |
-| Categorization / Sorting | Yes | — |
-| Hotspot / Image-based selection | Yes | — |
-| Drag-and-drop | Yes | — |
-| Fill-in-the-blank / Cloze | Yes | — |
-| Short Answer | Yes | — |
-| Numeric/Calculation Response | Yes | Yes |
-| Long Answer / Essay | — | Yes |
-| Case Study Analysis | — | Yes |
-| Practical / Hands-on Exercise | — | Yes |
-| Simulation-based | — | Yes |
-| Project-based Assessment | — | Yes |
-| Peer Review / Peer Assessment | — | Yes |
-| Branching Scenario / Decision Tree | — | Yes |
-| Role-play / Simulation Dialogue | — | Yes |
-| Two-tier questions | — | Yes |
+| Type | Best for knowledge-level |
+| --- | --- |
+| True/False | Low |
+| Multiple Choice (single answer) | Low-High |
+| Multiple Response / Multiple Select | Low-High |
+| Matching | Low |
+| Ranking / Ordering | Low-High |
+| Categorization / Sorting | Low |
+| Hotspot / Image-based selection | Low |
+| Drag-and-drop | Low |
+| Fill-in-the-blank / Cloze | Low |
+| Short Answer | Low |
+| Numeric/Calculation Response | Low-High |
+| Long Answer / Essay | High |
+| Case Study Analysis | High |
+| Practical / Hands-on Exercise | High |
+| Simulation-based | High |
+| Project-based Assessment | High |
+| Peer Review / Peer Assessment | High |
+| Branching Scenario / Decision Tree | High |
+| Role-play / Simulation Dialogue | High |
+| Two-tier questions | High |

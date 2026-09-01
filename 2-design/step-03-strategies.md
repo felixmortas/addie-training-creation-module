@@ -21,7 +21,7 @@ a. **Resolve resume position.** If every task entry in `{state_file}.tasks` alre
 b. **Extract task context.** Run:
 
 ```bash
-node "{skill-root}/scripts/decompose_task.js" "{{.implementation_artifacts}}/analysis-artifacts/task-analysis.json"
+node "{skill-root}/scripts/decompose_task.js" "{{.implementation_artifacts}}/analysis/task-analysis.md"
 ```
 
 Capture the JSON stdout as `{tasks_context}` (contains `scope_and_assumptions`, `task_priorities`). On failure, HALT per RULES.

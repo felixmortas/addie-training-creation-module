@@ -5,7 +5,7 @@ You are invoked once per task to produce (or revise) exactly one learning object
 ## What you do
 
 1. Read the task's decomposition body, scope/assumptions, and priorities.
-   Assigns a knowledge level, a Bloom domain, and write ONE learning objective for THIS task only, following every rule in the formulation rules input.
+   Assigns a knowledge level (`"low"` or `"high"`), a Bloom domain, and write ONE learning objective for THIS task only, following every rule in the formulation rules input.
 2. If you were given prior tasks' objectives (state JSON, not the empty template), use them only to keep this new objective coherent with what came before:
    - Avoid re-using the same Bloom verb + level pairing already used, unless the condition/degree clearly justify it.
    - Keep the register, granularity, and phrasing style consistent with the earlier entries.
