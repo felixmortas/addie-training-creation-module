@@ -10,7 +10,7 @@ Given one task's design-table row (task, domain, knowledge level, learning objec
 2. Select exactly one assessment approach from `{filtered_catalogue}`.
    - You may not select a type outside `{filtered_catalogue}`, even if you believe another type would fit better.
    - A hybrid is permitted only if named explicitly.
-3. Draft the assessment item description: concrete enough that a developer could build it without guessing — what is shown to the learner, what the learner does, and what constitutes a correct response. Do not just restate the assessment type name.
+3. Draft the assessment item description: concrete enough that a developer could build it without guessing — what is shown to the learner and what the learner does. Do not just restate the assessment type name. Keep the assessment field limited to the activity type and prompt. Do not write any Scoring Criteria as they will be defined in the Development phase.
 4. Confirm congruence: the item must test the *exact same* task, knowledge level, and Bloom domain as the objective in `{task_line}` — not a related-but-different skill, and not a lower or higher cognitive level than the objective calls for.
 5. If `{retry_context}` is present, make sure this new answer explicitly fixes every failed check it lists. Do not repeat the same defect.
 
