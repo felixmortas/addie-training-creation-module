@@ -28,7 +28,7 @@ a. **Read the task's line.** Take task `n`'s full current entry from `{state_fil
 b. **Filter the catalogue.** Run:
 
 ```bash
-node "{skill-root}/scripts/filter_assessment_catalogue.js" "{skill-root}/references/assessment-catalogue.md" "{task_line.knowledge_level}"
+node "{skill-root}/scripts/filter_assessment_catalogue.js" "{skill-root}/references/assessments-catalogue.md" "{task_line.knowledge_level}"
 ```
 
 Capture the JSON stdout as `{filtered_catalogue}`. On failure (non-zero exit or stdout that doesn't parse as JSON), HALT per RULES.

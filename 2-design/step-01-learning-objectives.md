@@ -65,4 +65,4 @@ Once every task from 1 to `{task_count}` has a validated entry in `{state_file}`
 
 ## NEXT
 
-Read fully and follow `[[design-snapshot:step-02-assessment.md]]`
+Read fully and follow `[[design-snapshot:step-02-assessments.md]]`
