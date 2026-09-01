@@ -36,7 +36,7 @@ d. **Validate.** Check `{candidate_state}` against every item:
    - Every `task_id` from `{state_file}` is present in `{candidate_state}`, unchanged, in the same order — no task added, removed, merged, or reordered.
    - Every field that already existed on each task (`task_title`, `knowledge_level`, `bloom_domain`, `objective`, `assessment`, etc.) is byte-for-byte identical to what was in `{state_file}` before this call.
    - For every task whose `objective` field is absent or whose `assessment` field is `"unresolved"`, `organizational_strategy` is set to `"unresolved"` — not fabricated.
-   - For every other task, `organizational_strategy` is exactly one of the four phase names defined in `organizational-strategies-definition.md` (verbatim), and `organizational_strategy_justification` is a concise, one-line justification grounded in that task's own content — not copied verbatim between tasks.
+   - For every other task, `organizational_strategy` is exactly one of the four phase names defined in `organizational-strategies-definition.md` (verbatim).
    - `task_count` and `source_task_analysis` are unchanged.
 
    - **All checks pass:** overwrite `{state_file}` with `{candidate_state}`. Move to step 2.
