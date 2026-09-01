@@ -1,0 +1,42 @@
+# DO NOT EDIT -- overwritten on every update.
+#
+# Default customization values for addie-design.
+# Override in _bmad/custom/addie-design.toml or
+# _bmad/custom/addie-design.user.toml.
+#
+# Merge rules:
+# - Strings replace the default.
+# - Lists append to the default list.
+# - Tables merge key by key.
+# - Arrays of tables merge by `id`: matching `id` replaces, new `id`s append.
+
+[workflow]
+
+# Extra instructions to run before config is loaded and before the user is greeted.
+
+activation_steps_prepend = []
+
+# Extra instructions to run after the greeting and before step 01.
+
+activation_steps_append = []
+
+# Facts kept in context for the whole run.
+# Entries are literal text or file references prefixed with "file:".
+# File entries may use globs and are loaded during activation.
+#
+# Example override for addie-design.user.toml:
+# persistent_facts = ["file:_bmad/custom/style-guide.md", "Target audience: adult learners with no prior domain knowledge"]
+
+persistent_facts = []
+
+# Instruction run after step 03 finishes and the design table in {state_file}
+# is complete (every task strategized or explicitly flagged unresolved).
+# Empty means no extra completion behavior. {state_file} is substituted at
+# run time.
+#
+# Example override instructions for addie-design.user.toml:
+# "Also open {state_file} in the default editor when done." or
+# "Also post the finished design table's task count to our #instructional-design
+# Slack channel."
+
+on_complete = ""

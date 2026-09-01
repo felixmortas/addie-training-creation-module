@@ -85,3 +85,9 @@ Once every task from 1 to `{task_count}` has both an `organizational_strategy` a
 - where `{state_file}` lives.
 
 This is the final step of the workflow. The design table in `{state_file}` is ready for handoff to Development for every task that is not flagged `unresolved`; unresolved tasks require human resolution before handoff.
+
+## On Complete
+ 
+If anything appears below, follow it as the final terminal instruction before exiting; otherwise exit normally.
+ 
+{workflow.on_complete}
